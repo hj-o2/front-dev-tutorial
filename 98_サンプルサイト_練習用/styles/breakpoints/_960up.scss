@@ -1,0 +1,39 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+
+.font-sm {
+  font-style: 16px;
+}
+
+.font-md {
+  font-style: 19px;
+}
+
+.font-lr {
+  font-style: 23px;
+}
+
+.font-lg {
+  font-style: 36px;
+}
+
+.mb-sm {
+  margin-bottom: 150px !important;
+}
+
+.pb-lg {
+  padding-bottom: 150px !important;
+}
+
+.popular {
+  &__item {
+    flex-basis: 25%;
+  }
+
+  &__img {
+    height: 335px;
+  }
+}
