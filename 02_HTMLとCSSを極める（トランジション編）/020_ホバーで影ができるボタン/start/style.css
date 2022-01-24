@@ -1,0 +1,26 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 50px;
+  margin: 50px 0;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn.float:hover {
+  -webkit-box-shadow: 5px 5px 10px 0px #000001;
+          box-shadow: 5px 5px 10px 0px #000001;
+}
+/*# sourceMappingURL=style.css.map */
