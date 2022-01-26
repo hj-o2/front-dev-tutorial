@@ -20,10 +20,6 @@ Stylesheet: 960px以上のモニタで適用
   font-style: 36px;
 }
 
-.mb-sm {
-  margin-bottom: 150px !important;
-}
-
 .pb-lg {
   padding-bottom: 150px !important;
 }
@@ -35,5 +31,15 @@ Stylesheet: 960px以上のモニタで適用
 
   &__img {
     height: 335px;
+  }
+}
+
+.travel {
+  &__img {
+    height: 400px;
+  }
+
+  &__description {
+    margin-bottom: 40px;
   }
 }

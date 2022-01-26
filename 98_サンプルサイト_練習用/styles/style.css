@@ -754,22 +754,22 @@ body {
 }
 
 .font-sm, .sub-title {
-  font-style: 14px;
+  font-size: 14px;
 }
 
 .font-md, .popular__title {
-  font-style: 17px;
+  font-size: 17px;
 }
 
 .font-lr, .houses__title {
-  font-style: 17px;
+  font-size: 17px;
 }
 
 .font-lg, .main-title {
-  font-style: 25px;
+  font-size: 25px;
 }
 
-.mb-sm, .houses__title, .popular__title {
+.mb-sm, .travel__sub, .travel__img, .houses__title, .popular__title {
   margin-bottom: 16px !important;
 }
 
@@ -777,7 +777,7 @@ body {
   margin-bottom: 80px !important;
 }
 
-.pb-sm, .popular__header {
+.pb-sm, .travel__texts, .popular__header {
   padding-bottom: 16px !important;
 }
 
@@ -785,7 +785,7 @@ body {
   padding-bottom: 80px !important;
 }
 
-.content-width, .houses, .popular__header, .popular__container {
+.content-width, .travel, .houses, .popular__header, .popular__container {
   width: 90%;
   margin: 0 auto;
   max-width: 1070px;
@@ -794,13 +794,14 @@ body {
 .main-title {
   font-weight: 600;
   margin-bottom: 0;
+  display: block;
 }
 
 .sub-title {
   color: #535353;
 }
 
-.flex, .houses__inner, .popular__container {
+.flex, .travel__inner, .houses__inner, .popular__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -808,6 +809,29 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.purple {
+  color: #904669;
+}
+
+.travel__inner {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  background-color: #eaebe6;
+}
+
+.travel__img {
+  height: 300px;
+}
+
+.travel__img > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .houses__btn {
@@ -821,7 +845,7 @@ body {
 }
 
 .popular__inner::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -867,7 +891,7 @@ Stylesheet: 480px以上(スマホの横向き)のモニタで適用
 Stylesheet: 600px以上のタブレットやモニタで適用
 
 ******************************************************************/
-  .flex, .houses__inner, .popular__container {
+  .flex, .travel__inner, .houses__inner, .popular__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -889,6 +913,21 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
+  .travel__inner {
+    padding: 50px;
+  }
+  .travel__texts, .travel__img {
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
+  }
+  .travel__texts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -909,9 +948,6 @@ Stylesheet: 960px以上のモニタで適用
   .font-lg, .main-title {
     font-style: 36px;
   }
-  .mb-sm, .houses__title, .popular__title {
-    margin-bottom: 150px !important;
-  }
   .pb-lg {
     padding-bottom: 150px !important;
   }
@@ -922,6 +958,13 @@ Stylesheet: 960px以上のモニタで適用
   .popular__img {
     height: 335px;
   }
+  .travel__img {
+    -ms-flex-preferred-size: 400px;
+        flex-basis: 400px;
+  }
+  .travel__description {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -930,6 +973,9 @@ Stylesheet: 960px以上のモニタで適用
 Stylesheet: 1280px以上のモニタで適用
 
 ******************************************************************/
+  .travel__inner {
+    padding: 50px 150px;
+  }
   .popular__item {
     -ms-flex-preferred-size: 23%;
         flex-basis: 23%;
