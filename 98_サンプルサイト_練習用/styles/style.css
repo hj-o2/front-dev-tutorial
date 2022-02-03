@@ -940,6 +940,11 @@ main {
           transform-origin: right;
 }
 
+.travel__title.inview {
+  -webkit-transform: translateY(-50%) scaleX(1);
+          transform: translateY(-50%) scaleX(1);
+}
+
 .travel__img {
   height: 300px;
   -webkit-transition: -webkit-box-shadow 1ms linear 0.8s;

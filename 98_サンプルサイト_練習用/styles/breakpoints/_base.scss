@@ -149,9 +149,13 @@ main {
       $left: -120px
     ) {
       background-color: $cBlack;
-      transform: translateY(-50%);
+      transform: translateY(-50%) ;
       transition: transform 0.3s ease 1.6s;
       transform-origin: right;
+    }
+
+    &.inview {
+      transform: translateY(-50%) scaleX(1);
     }
   }
 
